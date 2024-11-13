@@ -77,6 +77,7 @@ The assembly diagram below illustrates the positioning and connections of each c
 
 ## Circuit Diagram
 A comprehensive circuit diagram is provided below to show the complete wiring for this project.
+![image](https://github.com/user-attachments/assets/e99c7d60-0ad0-418c-8ceb-0ea5a02e4550)
 [Circuit Diagram PDF](circuit_diagram.pdf)
 ## Code Explanation
 
