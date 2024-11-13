@@ -18,7 +18,7 @@
 
 ## Project Overview
 
-This project was part of my Year 12 Computer Science course to investigate control systems. I chose to design a solar tracker using an Arduino Uno to maximize light capture by aligning a solar panel with the sun as it moves.
+This project was part of my year 12 computer science course to investigate control systems. I chose to design a solar tracker using an Arduino Uno to maximize light capture by aligning a solar panel with the sun as it moves.
 
 Although the initial design included four photoresistors and two degrees of freedom, this implementation uses two photoresistors and a single servo motor, achieving one degree of freedom. This simplified version still demonstrates the core functionality of a solar tracker by rotating to follow the brightest light source in one axis.
 
@@ -62,6 +62,9 @@ The photoresistors detect light intensity, with each sensor providing an analog 
   - Type: Digital, active actuator
   - Signal: PWM (Pulse Width Modulation) to control angle
   - Voltage Range: 4.8V to 6V
+  
+  ![image](https://github.com/user-attachments/assets/00d0bf16-3557-4789-9e31-daa5631ce3ef)
+
 
 ### 3.3 Programming Guide
 The code reads the photoresistor values, calculates their difference, and moves the servo to align with the light source. A threshold value is used to filter out noise, preventing constant oscillation due to minor fluctuations in light. (See [Future Improvements](#future-improvements) for more on noise handling.)
@@ -70,10 +73,11 @@ The code reads the photoresistor values, calculates their difference, and moves 
 
 ## Assembly
 The assembly diagram below illustrates the positioning and connections of each component in the solar tracker. The labeled parts such as the solar panel, photoresistors, servo, and 3D-printed parts provide a clear reference for setting up the project.
+![image](https://github.com/user-attachments/assets/0ff4c9be-deb6-4c8d-b191-4907ce1f4e14)
 
 ## Circuit Diagram
 A comprehensive circuit diagram is provided below to show the complete wiring for this project.
-
+[Circuit Diagram PDF](circuit_diagram.pdf)
 ## Code Explanation
 
 The program operates as a closed-loop proportional feedback control system. This is ideal for this project because it allows continuous adjustments based on real-time light data. This setup enables the solar tracker to actively align with changing light conditions, maximizing accuracy and responsiveness.
