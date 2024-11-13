@@ -44,7 +44,7 @@ Although the initial design included four photoresistors and two degrees of free
   - 6 x AA Battery Pack (9V)
   - USB Power Bank (5V)
   - 12V DC Power Adapter for stationary setups
-  ![image]([https://github.com/philip344/solar_project/blob/main/final.jpg)\])
+  ![final](final.jpg)
 
 *Note: For testing, I powered the Arduino with a USB cable from my laptop.*
 
